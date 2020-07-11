@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="22c03119-db6a-44e8-9622-d61237616ee4" activeEnvironment="Default" name="Main FrameWork" resourceRoot="" soapui-version="5.5.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:testSuite id="77767996-0439-46e0-b578-abc906a0aa02" name="Main Test Suit"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="fd213269-01c2-4a3a-956a-b6b7cde254b3" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Execute Project" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Execution Button" id="2cbb0aae-509e-4a2b-b43d-5052c3c33c8b"><con:settings/><con:config><script>def projectName=testRunner.getTestCase().getTestSuite().getProject().getWorkspace().getProjectByName("DBS Assignment")
+def runStatus=projectName.run(null,true)
+//projectName.run(new com.eviware.soapui.support.types.StringToObjectMap(), false)
+
+Thread.sleep(40000)
+log.info(">> Execution Status:"+runStatus.getStatus().toString())</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
